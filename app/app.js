@@ -1,9 +1,11 @@
 const API_BASE = 'http://localhost/api-jwt'; // es: http://localhost/api
 
+<<<<<<< HEAD
 const form = document.getElementById('loginForm');
 const output = document.getElementById('output');
 
 form.addEventListener('submit', async (e) => {
+
     e.preventDefault();
 
     const username = document.getElementById('username').value;
@@ -32,6 +34,9 @@ form.addEventListener('submit', async (e) => {
         output.textContent = err.message;
     }
 });
+=======
+if(!localStorage.getItem("token")) window.location.href = "/logInOrLogUp";
+>>>>>>> 3a8fdfc78ecf72fe8d4ff603293e5215bc377b86
 
 async function getUsers() {
     const token = localStorage.getItem('token');

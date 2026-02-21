@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Feb 21, 2026 alle 10:47
+-- Creato il: Feb 21, 2026 alle 11:25
 -- Versione del server: 10.4.32-MariaDB
 -- Versione PHP: 8.2.12
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `jwtgruppi_db`
 --
+CREATE DATABASE IF NOT EXISTS `jwtgruppi_db` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `jwtgruppi_db`;
 
 -- --------------------------------------------------------
 
@@ -27,6 +29,7 @@ SET time_zone = "+00:00";
 -- Struttura della tabella `tasks`
 --
 
+DROP TABLE IF EXISTS `tasks`;
 CREATE TABLE `tasks` (
                          `id_task` int(11) NOT NULL,
                          `title` varchar(50) NOT NULL,
@@ -40,12 +43,20 @@ CREATE TABLE `tasks` (
 -- Struttura della tabella `users`
 --
 
+DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
                          `id` int(11) NOT NULL,
                          `username` varchar(50) NOT NULL,
                          `password` varchar(255) NOT NULL,
                          `role` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dump dei dati per la tabella `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `password`, `role`) VALUES
+    (0, 'cobra', '*A4B6157319038724E3560894F7F932C8886EBFCF', 'admin');
 
 --
 -- Indici per le tabelle scaricate
