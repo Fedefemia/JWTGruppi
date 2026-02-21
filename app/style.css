@@ -154,7 +154,12 @@ body {
     background-color: var(--background-ligth);
     padding: 15px;
     border: var(--background-ligth-border) 5px solid;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(43, 38, 24, 0.15);
+}
+
+.task_side_con:hover {
+    scale: 1.01;
 }
 
 .task_side_con_l {
@@ -190,14 +195,15 @@ body {
 }
 
 .task_title {
-    font-size: 0.9rem;
+    margin-left: 10px;
+    font-size: 1rem;
     color: var(--accent-darkest);
 }
 
 .task_form_input {
     border: var(--accent-soft-border) 5px solid;
     background-color: var(--accent-soft);
-    padding: 5px;
+    padding: 10px 5px;
     border-radius: 25px;
 }
 
@@ -207,6 +213,16 @@ body {
     padding: 5px 10px;
     border-radius: 25px;
     font-size: 1rem;
+}
+
+.button:hover {
+    filter: brightness(0.9);
+    scale: 1.02;
+}
+
+.button:active {
+    filter: brightness(0.7);
+    scale: 0.9;
 }
 
 .header {
