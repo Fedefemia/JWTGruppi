@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tasks` (
-  `id_tasks` int(11) NOT NULL,
+  `id_task` int(11) NOT NULL,
   `title` varchar(50) NOT NULL,
   `completed` tinyint(1) NOT NULL DEFAULT 0,
   `user_id` int(11) NOT NULL
