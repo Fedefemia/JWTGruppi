@@ -1,1 +1,1 @@
-5.tcp.eu.ngrok.io:17001/aip-jwt
+5.tcp.eu.ngrok.io:17001/api-jwt

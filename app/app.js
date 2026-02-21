@@ -4,6 +4,7 @@ const form = document.getElementById('loginForm');
 const output = document.getElementById('output');
 
 form.addEventListener('submit', async (e) => {
+
     e.preventDefault();
 
     const username = document.getElementById('username').value;
