@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+5.tcp.eu.ngrok.io:17001/api-jwt
+=======
 5.tcp.eu.ngrok.io:17001/aip-jwt
 
 ## Root necessarie
@@ -14,3 +17,4 @@
 - Modifica di una task
 - Completamento di una task
 - Eliminazione di una task
+>>>>>>> 3a8fdfc78ecf72fe8d4ff603293e5215bc377b86
