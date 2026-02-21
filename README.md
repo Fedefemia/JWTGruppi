@@ -2,12 +2,13 @@
 
 ## Root necessarie
 - Root per la pagina index
-- Root per la pagina di login/signup
+- Root per la pagina di login/signup (specificando se è signup o login)
 
 ## Endpoint
 - Invio form login
 - Invio form signup
 
+- Recupero di tutte le task (di un utente specifico)
 - Recupero di tutte le task
 - Creazione di una task
 - Modifica di una task
