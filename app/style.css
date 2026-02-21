@@ -88,4 +88,5 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     color: var(--text-color);
+    min-height: 100vh;
 }
