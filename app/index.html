@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <title>Login</title>
 </head>
+
+<link rel="stylesheet" href="style.css">
 <body>
 
-<form id="loginForm">
-    <input type="text" id="username" placeholder="Username" required>
-    <input type="password" id="password" placeholder="Password" required>
-    <button type="submit">Login</button>
-</form>
-
-<button id="btn-users">Get Users</button>
-
-<pre id="output"></pre>
+<div class="contents">
+    <div class="task_form_con">
+        <form action="">
+            <input type="hidden" id="task_userId" value="">
+            <div class="form_row">
+                <label for="task_title">Nuova Task:</label>
+                <input type="text" id="task_title">
+            </div>
+            <div class="form_row">
+                <input type="submit" value="Aggiungi" id="task_submit">
+            </div>
+        </form>
+    </div>
+    <div class="task_list_con">
+        <div class="task_progressBar_con">
+            <h2>Completamento: XX%</h2>
+            <div class="task_progressBar"></div>
+        </div>
+    </div>
+</div>
 
 <script src="app.js"></script>
 </body>

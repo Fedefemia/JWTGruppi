@@ -84,8 +84,18 @@ table {
 }
 
 body {
-    background-image: linear-gradient(to bottom, var(--background), var(--background-dark));
+    background-color: var(--background-dark);
     background-repeat: no-repeat;
     background-size: auto;
     color: var(--text-color);
+    min-height: 100vh;
+}
+
+.visible {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+    pointer-events: none;
 }

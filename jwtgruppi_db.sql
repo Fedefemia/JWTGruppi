@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Feb 21, 2026 alle 10:38
+-- Creato il: Feb 21, 2026 alle 10:47
 -- Versione del server: 10.4.32-MariaDB
 -- Versione PHP: 8.2.12
 
@@ -28,10 +28,10 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tasks` (
-  `id_task` int(11) NOT NULL,
-  `title` varchar(50) NOT NULL,
-  `completed` tinyint(1) NOT NULL DEFAULT 0,
-  `user_id` int(11) NOT NULL
+                         `id_task` int(11) NOT NULL,
+                         `title` varchar(50) NOT NULL,
+                         `completed` tinyint(1) NOT NULL DEFAULT 0,
+                         `user_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -41,10 +41,10 @@ CREATE TABLE `tasks` (
 --
 
 CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `role` varchar(50) NOT NULL
+                         `id` int(11) NOT NULL,
+                         `username` varchar(50) NOT NULL,
+                         `password` varchar(255) NOT NULL,
+                         `role` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -55,41 +55,15 @@ CREATE TABLE `users` (
 -- Indici per le tabelle `tasks`
 --
 ALTER TABLE `tasks`
-  ADD PRIMARY KEY (`id_tasks`),
+    ADD PRIMARY KEY (`id_task`),
   ADD KEY `user_id` (`user_id`);
 
 --
 -- Indici per le tabelle `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
+    ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `username` (`username`);
-
---
--- AUTO_INCREMENT per le tabelle scaricate
---
-
---
--- AUTO_INCREMENT per la tabella `tasks`
---
-ALTER TABLE `tasks`
-  MODIFY `id_tasks` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT per la tabella `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- Limiti per le tabelle scaricate
---
-
---
--- Limiti per la tabella `tasks`
---
-ALTER TABLE `tasks`
-  ADD CONSTRAINT `tasks_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
