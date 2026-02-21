@@ -1,7 +1,5 @@
 const API_BASE = 'http://localhost/api-jwt'; // es: http://localhost/api
 
-if(!localStorage.getItem("token")) window.location.href = "/logInOrLogUp";
-
 async function getUsers() {
     const token = localStorage.getItem('token');
 

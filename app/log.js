@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost/api-jwt'; // es: http://localhost/api
+const API_BASE = 'http://localhost/JWTGruppi'; // es: http://localhost/api
 
 const loginForm = document.getElementById('login');
 const logupForm = document.getElementById('logup');
@@ -48,9 +48,9 @@ const performLog = async (e, action = "login") => {
         // salva JWT
         localStorage.setItem('token', data.token);
 
-        window.location.href = "/";
+        window.location.href = "/app/index.html";
     } catch (err) {
-        output.textContent = err.message;
+        console.log(err)
     }
 }
 
