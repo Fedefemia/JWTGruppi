@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost/JWTGruppi'; // es: http://localhost/api
+const API_BASE = 'http://localhost/api-jwt'; // es: http://localhost/api
 
 const loginForm = document.getElementById('login');
 const logupForm = document.getElementById('logup');
