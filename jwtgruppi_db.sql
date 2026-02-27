@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Feb 27, 2026 alle 10:40
+-- Creato il: Feb 27, 2026 alle 10:55
 -- Versione del server: 10.4.32-MariaDB
 -- Versione PHP: 8.2.12
 
@@ -69,7 +69,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `role`) VALUES
-(1, 'cobra', 'cobra', 'admin'),
+(1, 'cobra', 'cobracobra', 'admin'),
 (5, 'acosta', '1234', 'user'),
 (7, 'fedemani', '5678', 'user');
 
