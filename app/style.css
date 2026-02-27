@@ -140,7 +140,7 @@ body {
     PAGINA PRINCIPALE
 -----------------------------------------
 */
-
+/*
 .task_main_con {
     display: flex;
     flex-direction: row;
@@ -148,7 +148,48 @@ body {
     gap: 10px;
     align-items: stretch;
     height: 80%;
+} */
+
+
+.task_main_con {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 8px;
+    height: 80%;
 }
+
+.task_side_con_1 {
+    grid-column: span 2 / span 2;
+}
+
+.task_side_con_2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.task_side_con_3 {
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+
+.task_side_con_4 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+
+.task_side_con_5 {
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+
+
 
 .task_side_con {
     background-color: var(--background-ligth);
@@ -162,13 +203,15 @@ body {
     scale: 1.01;
 }
 
-.task_side_con_l {
-    flex-grow: 0.5;
+.task_side_con:active {
+    scale: 0.99;
+}
+
+.task_side_con_2_con {
     display: flex;
+    height: 100%;
     flex-direction: column;
-    align-items: stretch;
     justify-content: space-between;
-    padding: 20px;
 }
 
 .task_side_con_r {
@@ -180,6 +223,7 @@ body {
     flex-direction: column;
     gap: 10px;
     align-items: stretch;
+    justify-content: center;
 }
 
 .form_row {
@@ -228,11 +272,18 @@ body {
 .header {
     color: var(--background-ligth-border);
     width: 100%;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
 .main_title {
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+.main_username {
+    font-size: 1.2rem;
 }
