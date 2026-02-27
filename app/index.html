@@ -25,7 +25,7 @@
                     <input type="hidden" id="task_userId" value="">
                     <div class="form_row">
                         <label for="task_title" class="task_title nunito_bold">Nuova Task:</label>
-                        <input class="task_form_input" type="text" id="task_title">
+                        <input class="task_form_input" type="text" id="task_title" required>
                     </div>
                     <div class="form_row form_row_btn">
                         <input class="button nunito_bold" type="submit" value="Aggiungi" id="task_submit">
@@ -41,8 +41,10 @@
 
         <div class="task_side_con task_side_con_4">
             <div class="task_progressBar_con">
-                <h2>Completamento: XX%</h2>
-                <div class="task_progressBar"></div>
+                <h2 class="section_subTitle nunito_bold">Completamento:</h2>
+                <div class="task_progressBar">
+                    <div class="task_progressBar_filler"></div>
+                </div>
             </div>
         </div>
 

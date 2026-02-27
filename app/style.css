@@ -284,6 +284,42 @@ body {
     font-size: 2rem;
 }
 
+.section_title {
+    font-size: 1.5rem;
+    color: var(--background-ligth-border);
+}
+
+.section_subTitle {
+    font-size: 1rem;
+    color: var(--background-ligth-border);
+}
+
 .main_username {
     font-size: 1.2rem;
+}
+
+.task_progressBar_con {
+    height: 100%;
+    align-items: stretch;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.task_progressBar {
+    height: 30px;
+    border-radius: 50px;
+    border: 5px solid var(--background-ligth-border);
+    background-color: var(--background-darkest);
+    display: flex;
+    flex-direction: column;
+}
+
+.task_progressBar_filler {
+    height: 100%;
+    width: 40%;
+    border-radius: 50px;
+    border: 2px solid var(--confirm-soft-border);
+    background-color: var(--confirm-soft);
 }
