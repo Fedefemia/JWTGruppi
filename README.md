@@ -1,7 +1,7 @@
 <<<<<<< HEAD
-5.tcp.eu.ngrok.io:17001/api-jwt
+6.tcp.eu.ngrok.io:17985
 =======
-5.tcp.eu.ngrok.io:17001/aip-jwt
+6.tcp.eu.ngrok.io:17985
 
 ## Root necessarie
 - Root per la pagina index

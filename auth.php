@@ -7,6 +7,7 @@ function require_auth(): array {
     if (!isset($headers['Authorization'])) {
         http_response_code(401);
         echo json_encode(['error' => 'Token mancante']);
+        header('Location: app/index.html');
         exit;
     }
 
