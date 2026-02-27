@@ -6,6 +6,7 @@ require_once 'jwt.php';
 require_once 'auth.php';
 require_once 'users.php';
 require_once 'utils.php';
+require_once 'database.php';
 
 $method = $_SERVER['REQUEST_METHOD'];
 $path   = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
@@ -23,7 +24,9 @@ if ($path === 'login' && $method === 'POST') {
 
     $input = json_decode(file_get_contents('php://input'), true);
 
-    if ($input['username'] === 'admin' && $input['password'] === 'password') {
+
+
+    if ($input['username'] === 'admin' && $input['password'] === 'password') { //database here
         echo json_encode([
             'token' => jwt_encode(['user_id' => 1, 'role' => 'admin'])
         ]);
@@ -99,6 +102,8 @@ if ($parts[1] === 'users') {
         exit;
     }
 }
+
+//tasks here
 
 /*
 |--------------------------------------------------------------------------

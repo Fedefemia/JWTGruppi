@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-6.tcp.eu.ngrok.io:17985
-=======
 6.tcp.eu.ngrok.io:17985
 
 ## Root necessarie
@@ -17,4 +14,3 @@
 - Modifica di una task
 - Completamento di una task
 - Eliminazione di una task
->>>>>>> 3a8fdfc78ecf72fe8d4ff603293e5215bc377b86
